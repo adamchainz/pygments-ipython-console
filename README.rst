@@ -46,7 +46,6 @@ For example [change directory to dist/ folder to locate egg file]::
 
 To verify the installation run::
 
-	$ pygmentize -L lexer | grep -i ipython
-	* ipython:
-    	IPython console session (filenames *.ipy)
-
+	$ pygmentize -L lexer | grep -i ipy
+	* ipy:
+    	IPy session (filenames *.ipy)

@@ -21,12 +21,12 @@ setup(name='pygments-ipython-console',
       author_email='mamckay@gmail.com',
       url='',
       license='BSD',
-      py_modules=['lexer'],
+      py_modules=['ipython_lexer'],
       zip_safe=True,
       install_requires=[
           'setuptools',
       ],
       entry_points={
-          'pygments.lexers': 'ipython=lexer:IPyLexer',
+          'pygments.lexers': 'ipy=ipython_lexer:IPyLexer',
       },
 )
