@@ -27,6 +27,6 @@ setup(name='pygments-ipython-console',
           'setuptools',
       ],
       entry_points={
-          'pygments.lexers': 'ipython=lexer:IPythonConsoleLexer',
+          'pygments.lexers': 'ipython=lexer:IPyLexer',
       },
 )
