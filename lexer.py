@@ -2,5 +2,5 @@
 """
 
 from IPython.sphinxext.ipython_console_highlighting import IPyLexer
-#Update IPythonConsole Lexer to recognise filenames *.ipy
+#Update IPyLexer to recognise filenames *.ipy
 IPyLexer.filenames = ['*.ipy']
