@@ -28,6 +28,7 @@ setup(name='pygments-ipython-console',
       ],
       entry_points={
           'pygments.lexers': [
+                'o=ipython_lexer:IPyLexer',
                 'a=ipython_lexer:IPythonLexer',
                 'b=ipython_lexer:IPython3Lexer',
                 'c=ipython_lexer:IPythonConsoleLexer',
