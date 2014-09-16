@@ -8,27 +8,12 @@ Syntax coloring for IPython Console Files
 Overview
 ========
 
-This package provides a Pygments_ lexer for IPython Console Files.
-The lexer is published as an entry point and, once installed, Pygments will
-pick it up automatically.
-
-You can then use the ``ipython`` language with Pygments::
-
-    $ pygmentize -l ipython test.ipy
-
-[Or use the standard sphinx import of ipython_console_highlight.py]
-In Sphinx_ documents the lexer is selected with the ``highlight`` directive::
-
-    .. highlight:: ipython
-
-.. _Pygments: http://pygments.org/
-.. _Sphinx: http://sphinx-doc.org/
-
-Thanks to pygments-openssl project for providing a template [https://github.com/stefanholek/pygments-openssl]
+IPython fails to expose its pygments lexers to pygments. Installing this fixes
+that.
 
 Requirements
 ============
-This needs IPython 1.0+ for sphinxext module
+This needs IPython to get at the lexers.
 
 Installation
 ============

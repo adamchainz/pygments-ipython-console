@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 version = '0.2'
 
@@ -27,6 +27,12 @@ setup(name='pygments-ipython-console',
           'setuptools',
       ],
       entry_points={
-          'pygments.lexers': 'ipy=ipython_lexer:IPyLexer',
+          'pygments.lexers': [
+                'a=ipython_lexer:IPythonLexer',
+                'b=ipython_lexer:IPython3Lexer',
+                'c=ipython_lexer:IPythonConsoleLexer',
+                'd=ipython_lexer:IPythonPartialTracebackLexer',
+                'e=ipython_lexer:IPythonTracebackLexer',
+           ],
       },
 )
